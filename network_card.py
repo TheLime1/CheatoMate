@@ -21,11 +21,10 @@ def main():
     # Change this to your adapter name
     adapter_name = "COPY_YOUR_ADAPTER_NAME_HERE"
 
-    # Define hotkeys to enable and disable adapter
+    # hotkeys to enable and disable adapter
     keyboard.add_hotkey("1+3", disable_adapter, args=(adapter_name,))
     keyboard.add_hotkey("7+9", enable_adapter, args=(adapter_name,))
 
-    # Wait for hotkeys to be pressed
     keyboard.wait()
 
 
