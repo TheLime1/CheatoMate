@@ -2,8 +2,6 @@
 
 # CheatoMate
 
-A collection of scripts to "help" you with your programming exams.
-
 ## Features
 
 - Chat with Bing Copilot secretly in the terminal
