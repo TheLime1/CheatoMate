@@ -5,8 +5,11 @@ import datetime
 
 from sydney import SydneyClient
 
-with open('bing_cookie.txt', 'r') as file:
-    os.environ["BING_COOKIES"] = file.read()
+try:
+    with open('bing_cookie.txt', 'r') as file:
+        os.environ["BING_COOKIES"] = file.read()
+except FileNotFoundError:
+    raise FileNotFoundError("Please create the bing_cookie.txt file.")
 
 
 import datetime
