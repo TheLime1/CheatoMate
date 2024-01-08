@@ -36,5 +36,6 @@ A collection of scripts to "help" you with your programming exams.
 <summary>Setup network_card.py </summary>
 
 - in terminal type `wmic nic get name, index` and find the name of your network adapter
--  paste it here 
+-  paste it here
+  https://github.com/TheLime1/CheatoMate/blob/ea9e3881472574d92c485539c8cda08fcfc16a8c/network_card.py#L22
 </details>
