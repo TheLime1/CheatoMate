@@ -37,3 +37,23 @@
 -  paste it here
   https://github.com/TheLime1/CheatoMate/blob/ea9e3881472574d92c485539c8cda08fcfc16a8c/network_card.py#L22
 </details>
+
+## Usage
+
+### Chat
+
+- Run `python chat.py` and chat with the FREE GPT-4 AI
+- you can use custom commands like:
+
+| Command | Usage                  |
+| ------- | ---------------------- |
+| !reset  | Start new conversation |
+| !exit   | exit the code          |
+| !paste  | paste clipboard        |
+| !export | save chat to txt file  |
+
+### Network Card
+
+- Run `python network_card.py` 
+  - press `Numpad1` + `Numpad3` to deactivate your network adapter
+  - press `Numpad7` + `Numpad9` to activate your network adapter
