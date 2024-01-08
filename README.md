@@ -8,7 +8,7 @@ A collection of scripts to "help" you with your programming exams.
 
 - Chat with Bing Copilot secretly in the terminal
 - Export chat history to a txt file
-- Activate/Destory your network adapter with a keyboard shortcut
+- Activate/Deactivate your network adapter with a keyboard shortcut
 
 ## Installation
 
