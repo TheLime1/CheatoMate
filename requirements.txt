@@ -1,0 +1,5 @@
+sydney-py
+asyncio
+pyperclip
+pyuac
+pypiwin32
