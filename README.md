@@ -7,6 +7,7 @@
 - Chat with Bing Copilot secretly in the terminal
 - Export chat history to a txt file
 - Activate/Deactivate your network adapter with a keyboard shortcut
+- Chat with your friends in the terminal in real time
 
 ## Installation
 
