@@ -1,7 +1,6 @@
 # import the required modules
 import os
 import subprocess
-from termcolor import colored
 
 # install virtualenv if not already installed
 try:
@@ -30,6 +29,6 @@ with open(".env", "w") as f:
     f.write(f"PUSHER_APP_CLUSTER=YOUR_APP_CLUSTER\n")
 
 
-print(colored("**********************************************************************", "green"))
-print(colored("The environment is ready and the pusher app credentials template is created.", "green"))
-print(colored("go to https://dashboard.pusher.com/ and copy the app credentials to the .env file", "green"))
+print("**********************************************************************")
+print("The environment is ready and the pusher app credentials template is created.")
+print("go to https://dashboard.pusher.com/ and copy the app credentials to the .env file")
