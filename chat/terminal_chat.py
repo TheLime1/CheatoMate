@@ -1,4 +1,3 @@
-import getpass
 from termcolor import colored
 from pusher import Pusher
 import pysher
