@@ -15,9 +15,6 @@ class terminalChat():
     chatroom = "fooska"
     clientPusher = None
     user = None
-
-
-class terminalChat():
     active_users = []
 
     def main(self):
