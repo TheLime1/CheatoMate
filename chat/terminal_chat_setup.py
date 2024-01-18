@@ -9,20 +9,17 @@ def main():
     try:
         import virtualenv
     except ImportError:
-        subprocess.run(["sudo", "pip", "install", "virtualenv"])
+        subprocess.run(["pip", "install", "virtualenv"])
 
     # create a new environment with virtualenv
     subprocess.run(["virtualenv", "terminal-chat"])
 
-    # activate the environment
-    if os.name == "posix":  # for Linux and Mac
-        subprocess.run(["source", "terminal-chat/bin/activate"], shell=True)
-    else:  # for Windows
-        subprocess.run(["terminal-chat\\Scripts\\activate"], shell=True)
-
     # install the libraries
-    subprocess.run(["pip", "install", "pyperclip", "termcolor", "pusher",
-                    "git+https://github.com/nlsdfnbch/Pysher.git", "python-dotenv"])
+    if os.name == "posix":  # for Linux and Mac
+        subprocess.run(["/bin/bash", "-c", "source terminal-chat/bin/activate && pip install pyperclip termcolor pusher git+https://github.com/nlsdfnbch/Pysher.git python-dotenv"], shell=True)
+    else:  # for Windows
+        subprocess.run(
+            ["cmd", "/c", "terminal-chat\\Scripts\\activate && pip install pyperclip termcolor pusher git+https://github.com/nlsdfnbch/Pysher.git python-dotenv"], shell=True)
 
     # create a new .env file with the pusher app credentials
     with open(".env", "w") as f:
