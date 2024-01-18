@@ -41,7 +41,7 @@
 <details>
 <summary>Setup terminal-chat.py</summary>
 
-- run `terminal_chat_setup.py`
+- run `chat/terminal_chat_setup.py`
 - create your channel on https://dashboard.pusher.com/
 - copy the credentials to the generated `.env` file
 
