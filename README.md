@@ -20,7 +20,7 @@
 ### Setup
 
 <details>
-<summary>Setup chat.py </summary>
+<summary>Setup ai_helper.py </summary>
 
 1. Go to the Copilot web page.
 2. Open the developer tools in your browser (usually by pressing `F12` or right-clicking on the chat dialog and selecting Inspect).
@@ -38,11 +38,20 @@
   https://github.com/TheLime1/CheatoMate/blob/ea9e3881472574d92c485539c8cda08fcfc16a8c/network_card.py#L22
 </details>
 
+<details>
+<summary>Setup terminal-chat.py</summary>
+
+- run `terminal_chat_setup.py`
+- create your channel on https://dashboard.pusher.com/
+- copy the credentials to the generated `.env` file
+
+</details>
+
 ## Usage
 
-### Chat
+### Ai helper
 
-- Run `python chat.py` and chat with the FREE GPT-4 AI
+- Run `python ai_helper.py` and chat with the FREE GPT-4 AI
 - you can use custom commands like:
 
 | Command | Usage                  |
@@ -57,3 +66,37 @@
 - Run `python network_card.py` 
   - press `Numpad1` + `Numpad3` to deactivate your network adapter
   - press `Numpad7` + `Numpad9` to activate your network adapter
+
+### Terminal Chat
+
+1- first you need to activate the virtual environment
+
+<details>
+<summary>Windows</summary>
+
+```bash
+# change to the generated terminal-chat directory
+cd terminal-chat
+# activate environment
+Scripts\activate
+```
+
+</details>
+<details>
+<summary>Linux</summary>
+
+```bash
+# change to the generated terminal-chat directory
+cd terminal-chat
+# activate environment
+source bin/activate
+```
+
+</details>
+
+
+2- run `terminal_chat.py`
+
+3- pick a nickname
+
+4- start chatting !

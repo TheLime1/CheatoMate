@@ -4,3 +4,4 @@ pyperclip
 pyuac
 pypiwin32
 keyboard
+termcolor

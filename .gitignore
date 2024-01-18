@@ -1,6 +1,7 @@
 #custom
 .cosine
 *.txt
+terminal-chat/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
