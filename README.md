@@ -2,12 +2,16 @@
 
 # CheatoMate
 
-## Features
+## SCRIPTS
 
-- Chat with Bing Copilot secretly in the terminal
-- Export chat history to a txt file
-- Activate/Deactivate your network adapter with a keyboard shortcut
-- Chat with your friends in the terminal in real time
+| Script                                           | Description                                                         | Setup                                            | Usage                               |
+| ------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------ | ----------------------------------- |
+| [ai_helper.py](./ai_helper.py)                   | GPT-4 AI chat in terminal                                           | [General Setup](#general-setup)*                 | [Ai helper](#use-ai-helper)         |
+| [network_card.py](./network_card.py)             | Activate/Deactivate network card with a shortcut                    | [Setup network_card.py](#setup-network_cardpy)   | [Network Card](#use-network-card)   |
+| [chat/terminal_chat.py](./chat/terminal_chat.py) | Chat with your friends in terminal in real time                     | [Setup terminal-chat.py](#setup-terminal-chatpy) | [Terminal Chat](#use-terminal-chat) |
+| [var_changer.py](./var_changer.py)               | Change the name of the variables/functions/classes in any code base | [General Setup](#general-setup)*                 | [Var Changer](#use-var-changer)     |
+
+### **: not required*
 
 ## Installation
 
@@ -18,10 +22,12 @@
 - Python 3.9+
 - Microsoft account with access to bing copilot
 
+
+
 ### Setup
 
-<details>
-<summary>Setup ai_helper.py </summary>
+
+#### General Setup
 
 1. Go to the Copilot web page.
 2. Open the developer tools in your browser (usually by pressing `F12` or right-clicking on the chat dialog and selecting Inspect).
@@ -30,27 +36,31 @@
 5. Find a request named `create?bundleVersion=XYZ` and click on it.
 6. Scroll down to the requests headers section and copy the entire value after the `Cookie:` field.
 
-</details>
-<details>
-<summary>Setup network_card.py </summary>
+> [!TIP]
+> you can use the scripts without the cookies but you will have a limited number of requests (5 per chat session)
+
+## Usage
+
+
+#### Setup network_card.py 
 
 - in terminal type `wmic nic get name, index` and find the name of your network adapter
 -  paste it here
   https://github.com/TheLime1/CheatoMate/blob/ea9e3881472574d92c485539c8cda08fcfc16a8c/network_card.py#L22
-</details>
 
-<details>
-<summary>Setup terminal-chat.py</summary>
+
+
+### Setup terminal-chat.py
 
 - run `chat/terminal_chat_setup.py`
 - create your channel on https://dashboard.pusher.com/
 - copy the credentials to the generated `.env` file
 
-</details>
+
 
 ## Usage
 
-### Ai helper
+### use Ai helper
 
 - Run `python ai_helper.py` and chat with the FREE GPT-4 AI
 - you can use custom commands like:
@@ -62,18 +72,18 @@
 | !paste  | paste clipboard        |
 | !export | save chat to txt file  |
 
-### Network Card
+### use Network Card
 
 - Run `python network_card.py` 
   - press `Numpad1` + `Numpad3` to deactivate your network adapter
   - press `Numpad7` + `Numpad9` to activate your network adapter
 
-### Terminal Chat
+### use Terminal Chat
 
 1- first you need to activate the virtual environment
 
-<details>
-<summary>Windows</summary>
+
+Windows
 
 ```bash
 # change to the generated terminal-chat directory
@@ -82,9 +92,9 @@ cd terminal-chat
 Scripts\activate
 ```
 
-</details>
-<details>
-<summary>Linux</summary>
+
+
+Linux
 
 ```bash
 # change to the generated terminal-chat directory
@@ -93,7 +103,7 @@ cd terminal-chat
 source bin/activate
 ```
 
-</details>
+
 
 
 2- run `terminal_chat.py`
@@ -101,3 +111,9 @@ source bin/activate
 3- pick a nickname
 
 4- start chatting !
+
+### use Var Changer
+
+-1 put your codebase in a folder called `exam` in the same directory as `var_changer.py`
+2- run `var_changer.py`
+3- the script will modify the the codebase and zip it in a file called `modified.zip`
