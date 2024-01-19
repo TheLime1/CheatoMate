@@ -80,7 +80,7 @@
 
 ### use Terminal Chat
 
-1- first you need to activate the virtual environment
+1. first you need to activate the virtual environment
 
 
 Windows
@@ -106,14 +106,12 @@ source bin/activate
 
 
 
-2- run `terminal_chat.py`
-
-3- pick a nickname
-
-4- start chatting !
+2. run `terminal_chat.py`
+3. pick a nickname
+4. start chatting !
 
 ### use Var Changer
 
--1 put your codebase in a folder called `exam` in the same directory as `var_changer.py`
-2- run `var_changer.py`
-3- the script will modify the the codebase and zip it in a file called `modified.zip`
+1. put your codebase in a folder called `exam` in the same directory as `var_changer.py`
+2. run `var_changer.py`
+3. the script will modify the the codebase and zip it in a file called `modified.zip`
