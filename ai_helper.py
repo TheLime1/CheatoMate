@@ -9,10 +9,7 @@ try:
     with open('bing_cookie.txt', 'r') as file:
         os.environ["BING_COOKIES"] = file.read()
 except FileNotFoundError:
-    raise FileNotFoundError("Please create the bing_cookie.txt file.")
-
-
-import datetime
+    print("Please create the bing_cookie.txt file, to get unlimited access to the API.")
 
 
 async def main() -> None:

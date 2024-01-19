@@ -2,6 +2,9 @@
 .cosine
 *.txt
 terminal-chat/
+test/
+exam/
+modified/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
