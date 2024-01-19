@@ -39,8 +39,6 @@
 > [!TIP]
 > you can use the scripts without the cookies but you will have a limited number of requests (5 per chat session)
 
-## Usage
-
 
 #### Setup network_card.py 
 
