@@ -12,7 +12,7 @@ config.read('config.ini')
 bing_key = config.get('KEYS', 'BING_KEY')
 
 if bing_key == '"YOUR_BING_KEY"':
-    print("Warning: Please replace 'YOUR_BING_KEY' with your actual BING key in the config.ini file.")
+    print("Warning: Please replace 'YOUR_BING_KEY' with your actual BING key in the config.ini file, to get unlimited requests.")
 
 
 async def main() -> None:

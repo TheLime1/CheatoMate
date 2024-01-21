@@ -50,8 +50,7 @@ Paste the value of the `p-b` cookie into `config.ini`
 #### Setup network_card.py 
 
 - in terminal type `wmic nic get name, index` and find the name of your network adapter
--  paste it here
-  https://github.com/TheLime1/CheatoMate/blob/ea9e3881472574d92c485539c8cda08fcfc16a8c/network_card.py#L22
+-  paste it into `config.ini`
 
 
 

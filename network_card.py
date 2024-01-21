@@ -1,6 +1,15 @@
+import configparser
 import pyuac
 import subprocess
 import keyboard
+
+config = configparser.ConfigParser(interpolation=None)
+config.read('config.ini')
+adapter_name = config.get('HARDWARE', 'NETWORK_CARD')
+
+if adapter_name == '"YOUR_NETWORK_CARD"':
+    raise ValueError(
+        "Please update the NETWORK_CARD value in the config.ini file.")
 
 
 def enable_adapter(adapter_name):
@@ -16,11 +25,6 @@ def disable_adapter(adapter_name):
 
 
 def main():
-    # Get the name of the network adapter you want to control
-    # You can use the command "wmic nic get name, index" to see the list of adapters and their names
-    # Change this to your adapter name
-    adapter_name = "COPY_YOUR_ADAPTER_NAME_HERE"
-
     # hotkeys to enable and disable adapter
     keyboard.add_hotkey("1+3", disable_adapter, args=(adapter_name,))
     keyboard.add_hotkey("7+9", enable_adapter, args=(adapter_name,))
