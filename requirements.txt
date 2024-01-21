@@ -6,3 +6,4 @@ pypiwin32
 keyboard
 termcolor
 tqdm
+poe-api-wrapper

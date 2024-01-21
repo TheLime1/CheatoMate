@@ -1,3 +1,4 @@
+import configparser
 import asyncio
 import os
 import pyperclip
@@ -5,11 +6,13 @@ import datetime
 
 from sydney import SydneyClient
 
-try:
-    with open('bing_cookie.txt', 'r') as file:
-        os.environ["BING_COOKIES"] = file.read()
-except FileNotFoundError:
-    print("Please create the bing_cookie.txt file, to get unlimited access to the API.")
+# Read the API key from the config.ini file
+config = configparser.ConfigParser(interpolation=None)
+config.read('config.ini')
+bing_key = config.get('KEYS', 'BING_KEY')
+
+if bing_key == '"YOUR_BING_KEY"':
+    print("Warning: Please replace 'YOUR_BING_KEY' with your actual BING key in the config.ini file.")
 
 
 async def main() -> None:
